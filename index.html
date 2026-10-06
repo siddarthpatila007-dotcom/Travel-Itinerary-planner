@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Itinerary Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>✈️ Travel Itinerary Planner</h1>
+        <p class="subtitle">Plan your trip in one place</p>
+
+        <div class="form-box">
+
+            <h2>Add Trip Details</h2>
+
+            <label>Destination</label>
+            <input type="text" id="destination" placeholder="Enter destination">
+
+            <label>Date</label>
+            <input type="date" id="date">
+
+            <label>Activity</label>
+            <input type="text" id="activity" placeholder="Example: Visit museum">
+
+            <label>Travel Details</label>
+            <input type="text" id="travelDetails" placeholder="Example: Train - 8:00 AM">
+
+            <label>Notes</label>
+            <textarea id="notes" placeholder="Enter additional notes"></textarea>
+
+            <button onclick="addTrip()">Add Trip</button>
+
+        </div>
+
+        <h2 class="plan-title">My Travel Plans</h2>
+
+        <div id="tripList"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
